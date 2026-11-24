@@ -47,7 +47,16 @@ class user{
 }
 
 class Admin extends user {
-
+     constructor(
+        id: number,
+        name: string,
+        email: string,
+        password: string,
+        phone: string,
+        age: number
+    ) {
+        super(id, name, email, password, phone, age);
+    }
     manageNotes() {
         console.log("Admin can manage notes");
     }
